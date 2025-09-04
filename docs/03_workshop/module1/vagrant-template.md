@@ -1,5 +1,7 @@
 # Vagrant Template
 
+![](../assets/images/vagrant_arch.png)
+
 Vagrantfile  for Vagrant
 [https://developer.hashicorp.com/vagrant/docs/vagrantfile](https://developer.hashicorp.com/vagrant/docs/vagrantfile)
 
