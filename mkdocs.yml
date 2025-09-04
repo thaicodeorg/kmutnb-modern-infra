@@ -1,0 +1,14 @@
+site_name: Kmutnb modern infrastructure
+theme:
+  logo: assets/logo.png
+  name: material
+  font:
+    text: IBM Plex Sans Thai Looped
+  features:
+    - navigation.top
+    - navigation.footer
+    
+markdown_extensions:
+  - admonition
+
+copyright: Copyright &copy; 2025 sawangpong muadphet
