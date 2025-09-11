@@ -87,8 +87,7 @@ In essence, overlay file systems provide a lightweight and efficient way to mana
 
 ## install Tool dive to see docker file layer
 
-!!! note
-    Dive: Application for Viewing Contents of docker
+
 
 [https://github.com/wagoodman/dive](https://github.com/wagoodman/dive)
 
@@ -96,17 +95,19 @@ In essence, overlay file systems provide a lightweight and efficient way to mana
 
 ![](./images/demo.gif)
 
-```bash title="command"
+- create directory
+```bash
 mkdir dive-test
 cd dive-test
 touch file
 ```
-
-```bash title="pull debian image"
+- pull debian image
+```bash
 docker pull debian:latest
 ```
 
-```
+- Create Dockerfile
+```bash
 cat <<EOF > Dockerfile
 FROM debian:latest
 
@@ -128,7 +129,8 @@ CMD ["file"]
 EOF
 ```
 
-```bash title="command"
+- Test
+```bash
 # Build the image
 docker build -t vim-app .
 
@@ -145,7 +147,7 @@ docker run -it --rm vim-app --version
 docker run -it --rm vim-app sh -c "ls -la && pwd"
 ```
 
-```bash title="command"
+```bash
 docker image list
 docker inspect <imageid>
 dive <imageid>
