@@ -102,6 +102,10 @@ cd dive-test
 touch file
 ```
 
+```bash title="pull debian image"
+docker pull debian:latest
+```
+
 ```
 cat <<EOF > Dockerfile
 FROM debian:latest
